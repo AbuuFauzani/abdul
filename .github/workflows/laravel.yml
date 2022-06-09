@@ -35,5 +35,4 @@ jobs:
       run: vendor/bin/phpunit
       
   -name: Check the duplicate code in app directory
-  -run: ./vendor/bin/phpcpd app/ --min-lines=5 --min-tokens=10
---min-lines=5 => This will throw error when min 5 lines are duplicated. You can change this according to your requirement. 
+  run: ./vendor/bin/phpcpd app/ --min-lines=5 --min-tokens=10
